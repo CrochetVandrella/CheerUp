@@ -1,0 +1,17 @@
+{
+  "name": "cheerup",
+  "version": "1.0.0",
+  "description": "\"\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "author": "Mone Bell-Arrigton",
+  "license": "ISC",
+   "api-key": "526827c1ed82071daa246351446ab153",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "https": "^1.0.0",
+    "node-fetch": "^2.6.1"
+  }
+}
