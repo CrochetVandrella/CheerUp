@@ -9,11 +9,11 @@ const rl = readline.createInterface({
 });
 
 rl.question("How do you feel today? ", function(mood) {
-	var bibleSite = `https://api.scripture.api.bible/v1/bibles/2f0fd81d7b85b923-01/search?query=${mood}&sort=relevance`;
-	var token = '526827c1ed82071daa246351446ab153';
+	let bibleSite = `https://api.scripture.api.bible/v1/bibles/2f0fd81d7b85b923-01/search?query=${mood}&sort=relevance`;
+	let token = '526827c1ed82071daa246351446ab153';
 	https.get(bibleSite, token, res => {
 	res.setEncoding("utf8");
-		var body = "";
+		let body = "";
 		res.on("data", bv => {
 			body += bv;
 		});
